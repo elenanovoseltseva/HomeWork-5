@@ -16,7 +16,7 @@ public class Book {
     }
 
     public boolean isBig() {
-        return (pages > 500) ? true : false;
+        return (pages > 500);
     }
 
     public int estimatePrice() {
@@ -27,6 +27,6 @@ public class Book {
 
     public boolean matches(String word) {
         //System.out.println(author.name);
-        return (title.contains(word) || author.surname.contains(word) || author.name.contains(word)) ? true : false;
+        return (title.contains(word) || author.surname.contains(word) || author.name.contains(word));
     }
 }
